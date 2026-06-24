@@ -413,6 +413,11 @@
         tieNote.classList.add('hidden');
         tieNote.textContent = '';
       }
+      
+  gtag('event', 'result', {
+    result_type: meta.code
+  });
+
     }
 
     document.getElementById('startBtn').onclick = () => { state.current = 0; show(quizScreen); renderQuestion(); };
